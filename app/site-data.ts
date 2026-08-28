@@ -42,6 +42,8 @@ type Copy = {
     company: string;
     project: string;
     select: string;
+    budget: string;
+    budgetSelect: string;
     message: string;
     submit: string;
     sent: string;
@@ -175,7 +177,7 @@ export const content: Record<Locale, Copy> = {
     stats: {
       eyebrow: "В цифрах",
       items: [
-        { value: "15+", label: "проектов" },
+        { value: "01", label: "студия" },
         { value: "06", label: "направлений" },
         { value: "∞", label: "идей" },
         { value: "24/7", label: "creative mode" },
@@ -196,6 +198,8 @@ export const content: Record<Locale, Copy> = {
       company: "Компания",
       project: "Тип проекта",
       select: "Выберите направление",
+      budget: "Бюджет",
+      budgetSelect: "Выберите диапазон",
       message: "Расскажите о проекте",
       submit: "Отправить запрос",
       sent: "Запрос отправлен",
@@ -302,7 +306,7 @@ export const content: Record<Locale, Copy> = {
     stats: {
       eyebrow: "In numbers",
       items: [
-        { value: "15+", label: "projects" },
+        { value: "01", label: "studio" },
         { value: "06", label: "disciplines" },
         { value: "∞", label: "ideas" },
         { value: "24/7", label: "creative mode" },
@@ -323,6 +327,8 @@ export const content: Record<Locale, Copy> = {
       company: "Company",
       project: "Project type",
       select: "Select a discipline",
+      budget: "Budget",
+      budgetSelect: "Select a range",
       message: "Tell us about your project",
       submit: "Send inquiry",
       sent: "Inquiry sent",

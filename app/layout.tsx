@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { Cursor } from "./cursor";
 import "./globals.css";
 
 const geist = Geist({
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="ru" className={geist.variable}>
       <body>
         {children}
+        <Cursor />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(studioSchema) }}
